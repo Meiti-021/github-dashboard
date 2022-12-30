@@ -1,0 +1,133 @@
+.home {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.home > * {
+  width: 50%;
+}
+
+.home__main {
+  background-color: #24292e;
+}
+
+.home__figure {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home__foco-pic {
+  width: 80%;
+  object-fit: cover;
+}
+
+.home__nav {
+  width: 80%;
+  margin: 0 auto;
+  font-size: 15px;
+  margin-top: 20px;
+}
+
+.home__nav-list {
+  list-style: none;
+  font-family: iransans;
+  color: #fff;
+  display: flex;
+  justify-content: space-around;
+}
+
+.home__nav-item {
+  height: 75px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home__hero {
+  width: 80%;
+  margin: 0 auto;
+  direction: rtl;
+  margin-top: 140px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.home__logo {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-family: iransans;
+  color: #fff;
+  font-size: 21px;
+}
+
+.home__title {
+  font-family: beirut;
+  color: #fff;
+  font-size: 77px;
+  line-height: 1.2;
+}
+
+.home__logo-icon {
+  width: 115px;
+  height: 115px;
+}
+
+.home__login-btn {
+  width: 190px;
+  height: 70px;
+  border: none;
+  background-color: #fff;
+  color: black;
+  font-family: beirut;
+  border-radius: 12px;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+@media (max-width: 1100px) {
+  .home {
+    flex-direction: column-reverse;
+    height: auto;
+  }
+
+  .home > * {
+    width: 100%;
+    height: 100vh;
+  }
+  .home__title {
+    font-size: 60px;
+  }
+
+  .home__hero {
+    align-items: center;
+    text-align: center;
+  }
+  .home__logo {
+    flex-direction: column;
+    margin-bottom: 35px;
+    margin-top: -50px;
+  }
+  .home__figure {
+    background-color: #24292e;
+    height: 60vh;
+    align-items: flex-start;
+  }
+  .home__foco-pic {
+    border-radius: 25px;
+  }
+}
+
+@font-face {
+  font-family: iransans;
+  src: url(../assets/fonts/iransans.ttf);
+}
+
+@font-face {
+  font-family: beirut;
+  src: url("../assets/fonts/beirut.TTF");
+}

@@ -1,6 +1,6 @@
 .home {
   width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: row-reverse;
 }
@@ -21,36 +21,16 @@
 
 .home__foco-pic {
   width: 80%;
+  height: 80%;
+  object-fit: contain;
   object-fit: cover;
-}
-
-.home__nav {
-  width: 80%;
-  margin: 0 auto;
-  font-size: 15px;
-  margin-top: 20px;
-}
-
-.home__nav-list {
-  list-style: none;
-  font-family: iransans;
-  color: #fff;
-  display: flex;
-  justify-content: space-around;
-}
-
-.home__nav-item {
-  height: 75px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .home__hero {
   width: 80%;
   margin: 0 auto;
   direction: rtl;
-  margin-top: 140px;
+  margin-top: 200px;
   display: flex;
   flex-direction: column;
   gap: 50px;
@@ -73,8 +53,8 @@
 }
 
 .home__logo-icon {
-  width: 115px;
-  height: 115px;
+  width: 100px;
+  height: 100px;
 }
 
 .home__login-btn {
@@ -90,9 +70,13 @@
 }
 
 @media (max-width: 1100px) {
+  body {
+    background-color: #24292e;
+  }
   .home {
     flex-direction: column-reverse;
     height: auto;
+    padding-bottom: 25px;
   }
 
   .home > * {
@@ -115,6 +99,7 @@
   .home__figure {
     background-color: #24292e;
     height: 60vh;
+    padding-bottom: 25px;
     align-items: flex-start;
   }
   .home__foco-pic {

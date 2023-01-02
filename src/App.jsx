@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Form from "./components/Form";
 
 import "./App.css";
 import Home from "./components/Home";
@@ -6,7 +7,7 @@ import Home from "./components/Home";
 function App() {
   return (
     <div className="App">
-      <Home />
+      <Form />
     </div>
   );
 }

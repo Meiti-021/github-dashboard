@@ -1,0 +1,61 @@
+.dashboard {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: row-reverse;
+  background-color: aliceblue;
+}
+
+.navbar {
+  width: 240px;
+  background-color: #1e1f25;
+  height: 100%;
+  padding: 30px;
+}
+
+.navbar__logo {
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  color: #fff;
+  font-family: iransans;
+  gap: 8px;
+  font-size: 16px;
+}
+
+.navbar__logo-image {
+  height: 45px;
+  width: 45px;
+}
+
+.navbar__nav-list {
+  list-style: none;
+  direction: rtl;
+  display: flex;
+  flex-direction: column;
+  gap: 55px;
+  margin-top: 75px;
+}
+
+.navbar__nav-list li {
+  height: 25px;
+  display: flex;
+  gap: 15px;
+}
+.navbar__nav-list li a {
+  text-decoration: none;
+  color: #fff;
+  font-family: iransans;
+}
+
+.navbar__nav-list li a:active .navbar__nav-list li {
+  background-color: #131517;
+  color: red;
+}
+
+.nav-item__icon {
+  width: 25px;
+  display: block;
+  object-fit: contain;
+}

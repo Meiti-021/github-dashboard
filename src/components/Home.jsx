@@ -1,10 +1,11 @@
 import React from "react";
 import "../styles/Home.css";
-import { Link } from "react-router-dom";
+import { Link, Navigate, useNavigate } from "react-router-dom";
 import { DiGithubAlt } from "react-icons/di";
 import gitninja from "../assets/gitninja.png";
 import octocat from "../assets/octocat.png";
 const Home = () => {
+  const navigate = useNavigate();
   return (
     <div className="home">
       <figure className="home__figure">
@@ -17,7 +18,9 @@ const Home = () => {
             <p className="home__logo-text">داشبورد گیتهاب</p>
           </div>
           <h1 className="home__title">فعالیتهای گیتهابتو حرفه ای دنبال کن</h1>
-          <button className="home__login-btn">ورود</button>
+          <button className="home__login-btn" onClick={() => navigate("/form")}>
+            ورود
+          </button>
         </div>
       </div>
     </div>

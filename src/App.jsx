@@ -25,6 +25,7 @@ function App() {
             element={isLogin ? <MainPage /> : <Navigate to="/home" />}
           />
           <Route path="/home" element={<Home />} />
+          <Route path="/form" element={<Form />} />
         </Routes>
       </Router>
     </div>

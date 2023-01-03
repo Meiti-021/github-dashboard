@@ -46,6 +46,7 @@ input,
 .form input {
   background-color: transparent;
   border: 1px solid #435ce0;
+  color: #fff;
 }
 .form-btn {
   background-color: #904dd0;
@@ -78,6 +79,12 @@ input,
 .form-logo {
   margin: auto;
   font-size: 70px;
+}
+
+.form p.error-text {
+  color: red;
+  font-size: 12px;
+  margin-top: -10px;
 }
 
 @media (max-width: 1000px) {

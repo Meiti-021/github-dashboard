@@ -12,8 +12,8 @@ const Navbar = () => {
       </div>
 
       <ul className="navbar__nav-list">
-        {navData.map((item) => {
-          return <NavItem {...item} />;
+        {navData.map((item, index) => {
+          return <NavItem {...item} key={index} />;
         })}
         <button className="navbar__logout-btn">خروج</button>
       </ul>

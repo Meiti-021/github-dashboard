@@ -1,18 +1,14 @@
 import React from "react";
 import Header from "./Header";
-import Navbar from "./Navbar";
 import User from "./User";
-import "../styles/Dashboard.css";
-const Dashboard = () => {
+
+const dashboard = () => {
   return (
     <div className="dashboard">
-      <Navbar />
-      <div className="dashboard__container">
-        <Header />
-        <User />
-      </div>
+      <Header />
+      <User />
     </div>
   );
 };
 
-export default Dashboard;
+export default dashboard;

@@ -6,17 +6,17 @@ const navData = [
   },
   {
     content: "فعالیتها",
-    path: "activity",
+    path: "/activity",
     icon: "activity.png",
   },
   {
     content: "درباره سایت",
-    path: "about",
+    path: "/about",
     icon: "about.png",
   },
   {
     content: "راه های ارتباطی",
-    path: "contact",
+    path: "/contact",
     icon: "contact.png",
   },
 ];

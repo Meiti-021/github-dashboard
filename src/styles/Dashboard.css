@@ -11,6 +11,7 @@
   background-color: #1e1f25;
   height: 100%;
   padding: 30px;
+  position: relative;
 }
 
 .navbar__logo {
@@ -58,4 +59,19 @@
   width: 25px;
   display: block;
   object-fit: contain;
+}
+
+.navbar__logout-btn {
+  background-color: #2a6fff;
+  font-family: iransans;
+  color: #fff;
+  width: 80px;
+  height: 30px;
+  border: none;
+  border-radius: 17px;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  position: absolute;
+  bottom: 33px;
 }

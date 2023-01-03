@@ -12,10 +12,10 @@ const Navbar = () => {
       </div>
 
       <ul className="navbar__nav-list">
-        {" "}
         {navData.map((item) => {
           return <NavItem {...item} />;
-        })}{" "}
+        })}
+        <button className="navbar__logout-btn">خروج</button>
       </ul>
     </div>
   );

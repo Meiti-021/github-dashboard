@@ -214,7 +214,8 @@
   margin-top: 10px;
 }
 
-.profile {
+.profile,
+.followers {
   width: 100%;
   height: 100%;
   background-color: #1e1f25;

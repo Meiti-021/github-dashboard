@@ -1,9 +1,13 @@
 import React from "react";
-
+import Account from "./Account";
+import Profile from "./Profile";
 const User = () => {
   return (
     <div className="user">
-      <h1>i'm user</h1>
+      <Account />
+      <div className="user__main">
+        <Profile />
+      </div>
     </div>
   );
 };

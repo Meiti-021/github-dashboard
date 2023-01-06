@@ -17,6 +17,7 @@ const User = () => {
         <Languages />
         <Stars />
       </div>
+      <Followers />
     </div>
   );
 };

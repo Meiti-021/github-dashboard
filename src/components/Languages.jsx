@@ -10,7 +10,9 @@ const Languages = () => {
           datasets: [
             {
               data: [22, 45, 27],
-              backgroundColor: ["#a400a4", "#2a6fff", "gold"],
+              borderColor: "#2a6fff",
+              borderWidth: 5,
+              backgroundColor: ["#a400a4", "black", "gold"],
             },
           ],
           labels: ["html", "css", "javascript"],

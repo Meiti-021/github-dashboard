@@ -10,7 +10,9 @@ const Stars = () => {
           datasets: [
             {
               data: [22, 45, 27],
-              backgroundColor: ["#a400a4", "#2a6fff", "gold"],
+              borderWidth: 5,
+              borderColor: "#2a6fff",
+              backgroundColor: ["#a400a4", "black", "gold"],
             },
           ],
           labels: ["html", "css", "javascript"],

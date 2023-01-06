@@ -2,12 +2,12 @@ import React from "react";
 
 const Follower = ({ avatar_url, login, url }) => {
   return (
-    <div class="ih-item circle effect4 left_to_right">
+    <div className="ih-item circle effect4 left_to_right">
       <a href={url}>
-        <div class="img">
+        <div className="img">
           <img src={avatar_url} alt="img" />
         </div>
-        <div class="info" style={{}}>
+        <div className="info" style={{}}>
           <h3
             style={{
               padding: "0",

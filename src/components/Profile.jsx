@@ -19,7 +19,13 @@ const Profile = () => {
       <div className="profile__additional-info">
         {InfoData.map((item) => {
           if (userData[item.text] !== null) {
-            return <Info {...item} text={userData[item.text]} />;
+            return (
+              <Info
+                {...item}
+                text={userData[item.text]}
+                key={`${Math.random() * 55555555555555555555555}`}
+              />
+            );
           }
         })}
       </div>

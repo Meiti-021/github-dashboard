@@ -3,22 +3,20 @@ import Chart, { Colors } from "chart.js/auto";
 
 import { Bar } from "react-chartjs-2";
 
-const DefaultData = {
-  labels: ["html", "css", "java"],
-  datasets: [
-    {
-      data: [10, 20, 70, 40],
-      backgroundColor: ["#2a6fff"],
-      label: "محبوبترین پروژه ها",
-    },
-  ],
-};
-
 const Favorites = () => {
   return (
     <div className="favorites">
       <Bar
-        data={DefaultData}
+        data={{
+          labels: ["html", "css", "java"],
+          datasets: [
+            {
+              data: [10, 20, 70, 40],
+              backgroundColor: ["#2a6fff"],
+              label: "محبوبترین پروژه ها",
+            },
+          ],
+        }}
         options={{
           plugins: {
             title: {

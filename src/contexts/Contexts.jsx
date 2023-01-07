@@ -4,6 +4,8 @@ import {
   followersMock,
   followingMock,
   MockRepo,
+  mockGist,
+  mockStarred,
 } from "../database/mockData";
 
 const AppContext = React.createContext();
@@ -15,6 +17,8 @@ const AppProvider = ({ children }) => {
   const [followingsData, setFollowingsData] = useState(followingMock);
   const [name, setName] = useState("");
   const [repos, setRepos] = useState(MockRepo);
+  const [gists, setGists] = useState(mockGist);
+  const [starList, setStarList] = useState(mockStarred);
   return (
     <AppContext.Provider
       value={{
@@ -30,6 +34,10 @@ const AppProvider = ({ children }) => {
         setFollowingsData,
         repos,
         setRepos,
+        gists,
+        setGists,
+        starList,
+        setStarList,
       }}
     >
       {children}

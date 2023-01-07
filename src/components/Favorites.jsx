@@ -83,7 +83,16 @@ const Favorites = () => {
           scales: {
             yAxis: {
               ticks: {
-                stepSize: 10000,
+                stepSize:
+                  chartData.data[0] > 10000
+                    ? 1000
+                    : chartData.data[0] > 1000 && chartData.data[0] < 10000
+                    ? 100
+                    : chartData.data[0] > 100 && chartData.data[0] < 1000
+                    ? 50
+                    : chartData.data[0] > 10 && chartData.data[0] < 100
+                    ? 50
+                    : 1,
               },
             },
           },

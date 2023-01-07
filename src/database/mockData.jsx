@@ -3502,7 +3502,7 @@ const MockRepo = [
     svn_url: "https://github.com/Meiti-021/weather-widget",
     homepage: null,
     size: 494,
-    stargazers_count: 1,
+    stargazers_count: 2,
     watchers_count: 1,
     language: "CSS",
     has_issues: true,

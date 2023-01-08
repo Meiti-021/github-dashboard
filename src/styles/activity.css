@@ -1,0 +1,27 @@
+.activity {
+  background-color: #131517;
+  min-height: 100vh;
+  height: auto;
+  width: 100%;
+  padding: 35px;
+}
+
+.activity__container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 450px 450px;
+}
+
+.activity__container > * {
+  background-color: #1e1f25;
+  border-radius: 8px;
+  width: 100%;
+  height: 100%;
+}
+.ActivityTable {
+  grid-column: span 1;
+  padding: 50px 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

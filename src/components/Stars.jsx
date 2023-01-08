@@ -47,7 +47,6 @@ const Stars = () => {
       });
     });
     const newArray = Object.entries(eachIndex);
-    console.log(newArray);
     newArray.forEach((elem) => {
       let total = 0;
       elem[1].forEach((innerElem) => {

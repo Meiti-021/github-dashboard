@@ -30,7 +30,6 @@ const Form = () => {
         }
       })
       .catch((err) => {
-        console.log(err);
         // if (err.response.status == 404) {
         //   setFormData({ ...formData, githubId: "" });
         //   setNotFound(true);

@@ -6,6 +6,7 @@ import {
   MockRepo,
   mockGist,
   mockStarred,
+  mockEvents,
 } from "../database/mockData";
 
 const AppContext = React.createContext();
@@ -19,6 +20,7 @@ const AppProvider = ({ children }) => {
   const [repos, setRepos] = useState(MockRepo);
   const [gists, setGists] = useState(mockGist);
   const [starList, setStarList] = useState(mockStarred);
+  const [event, setEvent] = useState(mockEvents);
   return (
     <AppContext.Provider
       value={{
@@ -38,6 +40,8 @@ const AppProvider = ({ children }) => {
         setGists,
         starList,
         setStarList,
+        event,
+        setEvent,
       }}
     >
       {children}

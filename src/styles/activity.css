@@ -4,12 +4,18 @@
   height: auto;
   width: 100%;
   padding: 35px;
+  overflow-y: scroll;
+}
+
+.activity::-webkit-scrollbar {
+  display: none;
 }
 
 .activity__container {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 450px 450px;
+  gap: 20px;
 }
 
 .activity__container > * {
@@ -21,6 +27,13 @@
 .ActivityTable {
   grid-column: span 1;
   padding: 50px 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.events {
+  padding: 50px;
   display: flex;
   justify-content: center;
   align-items: center;

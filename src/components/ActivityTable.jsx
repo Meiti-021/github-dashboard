@@ -4,7 +4,7 @@ import { Bar, Line } from "react-chartjs-2";
 import Chart, { plugins } from "chart.js/auto";
 import { mockEvents } from "../database/mockData";
 
-const ActivityTable = () => {
+const ActivityTable = ({ color }) => {
   const [chartData, setChartData] = useState({ data: [], labels: [] });
 
   useEffect(() => {
@@ -53,7 +53,7 @@ const ActivityTable = () => {
             {
               data: chartData.data,
               fill: false,
-              borderColor: "rgb(75, 192, 192)",
+              borderColor: color,
               tension: 0.1,
               label: " فعالیت در هفت روز گذشته",
               yAxisID: "yAxis",

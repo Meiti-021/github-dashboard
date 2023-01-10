@@ -45,7 +45,7 @@ const ActivityTable = ({ color }) => {
   }, []);
 
   return (
-    <div className="ActivityTable">
+    <div className="ActivityTable" style={{ border: `1px solid ${color}` }}>
       <Line
         data={{
           labels: chartData.labels,

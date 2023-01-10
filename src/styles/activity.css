@@ -13,19 +13,18 @@
 
 .activity__container {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 450px 450px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 450px 400px;
   gap: 20px;
 }
 
 .activity__container > * {
-  background-color: #1e1f25;
   border-radius: 8px;
   width: 100%;
   height: 100%;
 }
 .ActivityTable {
-  grid-column: span 1;
+  grid-column: span 2;
   padding: 50px 5px;
   display: flex;
   justify-content: center;
@@ -37,4 +36,127 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  grid-column: span 2;
+}
+
+.latest-events {
+  background-color: #131517;
+  display: flex;
+  justify-content: center;
+  direction: rtl;
+  gap: 15px;
+  flex-direction: row-reverse;
+  grid-column: span 2;
+}
+
+.events-container {
+  width: 50%;
+  height: 100%;
+  border-radius: 8px;
+  display: grid;
+  padding: 20px;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 7px;
+  min-width: 350px;
+}
+
+.events-container > * {
+  border: 1px solid #fff;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: 0.2s transform;
+}
+.events-container > *:hover {
+  transform: translate(0px, -2px);
+}
+
+.latest-events__title {
+  font-family: iransans;
+  font-weight: normal;
+  grid-column: span 6;
+  font-size: 15px;
+  border: none;
+}
+
+.event-info {
+  color: #fff;
+  font-family: iransans;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+}
+
+.event-group {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.event-group__icon {
+  font-size: 25px;
+}
+
+.event-rest-info {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 35px;
+}
+.event-rest-info .event-group {
+  gap: 15px;
+}
+.event-rest-info .event-group .event-group__icon {
+  font-size: 50px;
+}
+
+.event-group__content {
+  direction: ltr;
+}
+
+.comming-soon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.comming-soon h1 {
+  direction: rtl;
+  font-family: iransans;
+  text-align: center;
+  line-height: 1.5;
+}
+
+@media (max-width: 1500px) {
+  .activity__container {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 450px 450px 400px 400px;
+  }
+}
+@media (max-width: 800px) {
+  .activity__container {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 450px 450px 700px 400px 400px;
+  }
+  .latest-events {
+    flex-direction: column;
+  }
+  .latest-events > * {
+    width: 100%;
+    height: 50%;
+  }
+  .comming-soon {
+    grid-column: span 2;
+  }
 }

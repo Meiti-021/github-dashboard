@@ -31,7 +31,7 @@ const Events = ({ color }) => {
     });
   }, []);
   return (
-    <div className="events">
+    <div className="events" style={{ border: `1px solid ${color}` }}>
       <Bar
         data={{
           labels: chartData.labels,

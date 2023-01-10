@@ -4,6 +4,8 @@ import "../styles/activity.css";
 import ActivityTable from "./ActivityTable";
 import { mockEvents } from "../database/mockData";
 import Events from "./Event";
+import LatestEvents from "./LatestEvents";
+import CommingSoon from "./commingSoon";
 const colors = [
   "rgb(222,214,238)",
   "rgb(80,255,254)",
@@ -25,13 +27,16 @@ const Activity = () => {
         setNum(num + 1);
         setColorPallet(colors[num]);
       }
-    }, 10000);
+    }, 50000);
   }, [num]);
   return (
     <div className="activity">
       <div className="activity__container">
         <ActivityTable color={colorPallet} />
         <Events color={colorPallet} />
+        <LatestEvents color={colorPallet} />
+        <CommingSoon color={colorPallet} />
+        <CommingSoon color={colorPallet} />
       </div>
     </div>
   );

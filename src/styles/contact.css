@@ -1,0 +1,73 @@
+.contact {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  background-color: #131517;
+  overflow-y: scroll;
+}
+
+.contact::-webkit-scrollbar {
+  display: none;
+}
+
+.contact > * {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.contact__figure-image {
+  display: block;
+  width: 100%;
+}
+
+.contact__content-text {
+  color: #fff;
+  width: 50%;
+  text-align: center;
+  font-family: iransans;
+  line-height: 1.8;
+  direction: rtl;
+}
+
+.accent-color {
+  color: rgb(246, 204, 13);
+}
+
+.contact-list {
+  list-style: none;
+  display: flex;
+  color: #fff;
+  margin-top: 50px;
+  font-size: 35px;
+  gap: 30px;
+}
+
+.contact-link {
+  color: rgb(246, 204, 13);
+  display: block;
+}
+
+@media (max-width: 1500px) {
+  .contact {
+    flex-direction: column;
+    height: auto;
+    padding-top: 70px;
+  }
+  .contact > * {
+    width: 100%;
+  }
+  .contact__content {
+    justify-content: flex-start;
+  }
+  .contact__content-text {
+    width: 80%;
+  }
+  .contact__figure-image {
+    width: 500px;
+    height: 500px;
+  }
+}

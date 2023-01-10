@@ -3,6 +3,12 @@ import Chart, { plugins } from "chart.js/auto";
 import { Pie } from "react-chartjs-2";
 import { useGlobalContext } from "../contexts/Contexts";
 const colorArray = [
+  "rgb(222,214,238)",
+  "rgb(80,255,254)",
+  "rgb(241,78,121)",
+  "rgb(236,255,133)",
+  "rgb(193,162,255)",
+  "rgb(78,255,141)",
   "#CCCC00",
   "#66E64D",
   "#4D80CC",
@@ -70,7 +76,7 @@ const Stars = () => {
           datasets: [
             {
               data: chartData.data,
-              borderWidth: 5,
+              borderWidth: 0,
               borderColor: "#1e1f25",
               backgroundColor: colorArray,
             },
@@ -81,7 +87,7 @@ const Stars = () => {
           plugins: {
             legend: { position: "left" },
             title: {
-              text: "ستاره ها برحسب زبان",
+              text: "مورد علاقه ها برحسب ستاره های داده شده",
               font: {
                 size: 14,
                 family: "iransans",

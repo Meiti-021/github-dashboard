@@ -54,7 +54,7 @@ const Favorites = () => {
               barPercentage: 1,
               data: chartData.data,
               backgroundColor: ["#2a6fff"],
-              label: "محبوبترین پروژه ها",
+              label: "محبوبترین پروژه ها برحسب تعداد ستاره",
               yAxisID: "yAxis",
             },
           ],
@@ -63,13 +63,13 @@ const Favorites = () => {
           plugins: {
             title: {
               display: true,
-              text: "محبوب ترین پروژه ها",
+              text: "محبوب ترین پروژه ها برحسب تعداد ستاره",
               position: "bottom",
               font: { family: "iransans", size: 15 },
             },
             subtitle: {
               display: true,
-              text: "حجم کدها",
+              text: "تعداد ستاره ها",
               position: " center",
               padding: 2,
             },

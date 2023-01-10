@@ -47,11 +47,12 @@ const Languages = () => {
         }
       });
     });
+
     const newArray = Object.entries(eachIndex);
     newArray.forEach((elem) => {
       let total = 0;
       elem[1].forEach((innerElem) => {
-        total += innerElem;
+        total += languageSizes[innerElem];
       });
       elem[1] = total;
     });
@@ -62,6 +63,7 @@ const Languages = () => {
       finalData.push(data[1]);
       finalLabels.push(data[0]);
     });
+
     setChartData({ ...chartData, data: finalData, labels: finalLabels });
   }, []);
   return (
@@ -82,7 +84,7 @@ const Languages = () => {
           plugins: {
             legend: { position: "left" },
             title: {
-              text: "زبان های استفاده شده در پروژه ها",
+              text: " زبان های استفاده شده در پروژه ها بر حسب کیلوبایت",
               font: {
                 size: 14,
                 family: "iransans",

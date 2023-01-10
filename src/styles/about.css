@@ -1,0 +1,66 @@
+.about {
+  width: 100%;
+  min-height: 100vh;
+  padding: 50px 0;
+  background-color: #131517;
+  color: #fff;
+  font-family: iransans;
+  overflow-y: scroll;
+  direction: rtl;
+}
+
+.about::-webkit-scrollbar {
+  display: none;
+}
+
+.about main {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 25px;
+}
+
+.about h1 {
+  font-size: 4rem;
+  line-height: 1.2;
+  margin: 5px 0;
+  font-family: beirut;
+}
+
+.about .subtext {
+  color: #666666;
+  font-size: 14px;
+}
+
+.blog-image {
+  width: 100%;
+  border-radius: 8px;
+  margin: 25px 0px;
+}
+
+main ul {
+  list-style: inside;
+  margin-bottom: 15px;
+}
+
+.content {
+  margin-bottom: 15px;
+}
+
+main section {
+  padding: 20px 0px;
+}
+
+main h2 {
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+main p {
+  line-height: 1.6;
+}
+
+main a {
+  display: inline-block;
+  margin: 5px;
+  text-decoration: none;
+  color: goldenrod;
+}

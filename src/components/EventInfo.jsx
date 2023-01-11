@@ -2,7 +2,6 @@ import React from "react";
 import { MdEventAvailable } from "react-icons/md";
 import { BiTimeFive, BiLinkExternal } from "react-icons/bi";
 import { RiAccountCircleLine } from "react-icons/ri";
-import { mockEvents } from "../database/mockData";
 import { VscRepo } from "react-icons/vsc";
 
 const EventInfo = ({ color }) => {

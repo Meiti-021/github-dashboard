@@ -15,6 +15,9 @@ const Navbar = () => {
         {navData.map((item, index) => {
           return <NavItem {...item} key={index} />;
         })}
+        <p className="rate-limit">
+          محدودیت درخواست : <br /> 60 / x
+        </p>
         <button className="navbar__logout-btn">خروج</button>
       </ul>
     </div>

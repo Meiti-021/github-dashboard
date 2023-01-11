@@ -1,8 +1,6 @@
 import React, { useEffect, useState } from "react";
-import moment from "moment/moment";
 import "../styles/activity.css";
 import ActivityTable from "./ActivityTable";
-import { mockEvents } from "../database/mockData";
 import Events from "./Event";
 import LatestEvents from "./LatestEvents";
 import CommingSoon from "./commingSoon";
@@ -27,7 +25,7 @@ const Activity = () => {
         setNum(num + 1);
         setColorPallet(colors[num]);
       }
-    }, 50000);
+    }, 3000);
   }, [num]);
   return (
     <div className="activity">

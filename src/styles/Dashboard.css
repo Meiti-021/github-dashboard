@@ -77,6 +77,14 @@
   bottom: 33px;
 }
 
+.rate-limit {
+  color: #fff;
+  font-family: iransans;
+  text-align: center;
+  line-height: 2;
+  margin-top: 150px;
+}
+
 .dashboard {
   padding: 35px;
   background-color: #131517;
@@ -90,7 +98,9 @@
 
 .header {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 15px;
   font-family: iransans;
   direction: rtl;
 }

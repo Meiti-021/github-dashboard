@@ -1,7 +1,5 @@
 import React from "react";
-import Header from "./Header";
 import Navbar from "./Navbar";
-import User from "./User";
 import "../styles/Dashboard.css";
 import { Route, Routes } from "react-router-dom";
 import Dashboard from "./Dashboard";

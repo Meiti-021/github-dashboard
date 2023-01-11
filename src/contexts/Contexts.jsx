@@ -1,26 +1,18 @@
 import React, { useContext, useState } from "react";
-import {
-  mockdata,
-  followersMock,
-  followingMock,
-  MockRepo,
-  mockGist,
-  mockStarred,
-  mockEvents,
-} from "../database/mockData";
 
 const AppContext = React.createContext();
 
 const AppProvider = ({ children }) => {
   const [isLogin, setIsLogin] = useState(false);
-  const [userData, setUserData] = useState(mockdata);
-  const [followersData, setFollowersData] = useState(followersMock);
-  const [followingsData, setFollowingsData] = useState(followingMock);
+  const [userData, setUserData] = useState(null);
+  const [followersData, setFollowersData] = useState(null);
+  const [followingsData, setFollowingsData] = useState(null);
   const [name, setName] = useState("");
-  const [repos, setRepos] = useState(MockRepo);
-  const [gists, setGists] = useState(mockGist);
-  const [starList, setStarList] = useState(mockStarred);
-  const [event, setEvent] = useState(mockEvents);
+  const [repos, setRepos] = useState(null);
+  const [gists, setGists] = useState(null);
+  const [starList, setStarList] = useState(null);
+  const [event, setEvent] = useState(null);
+  const [loading, setLoading] = useState(false);
   return (
     <AppContext.Provider
       value={{
@@ -42,6 +34,8 @@ const AppProvider = ({ children }) => {
         setStarList,
         event,
         setEvent,
+        loading,
+        setLoading,
       }}
     >
       {children}

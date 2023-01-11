@@ -4,10 +4,13 @@ import formPic from "../assets/form.png";
 import { GoMarkGithub } from "react-icons/go";
 import axios from "axios";
 import { useGlobalContext } from "../contexts/Contexts";
-import { useNavigate } from "react-router-dom";
-import Loading from "./Loading";
+import { Navigate, useNavigate } from "react-router-dom";
 const Form = () => {
-  const [loading, setLoading] = useState(false);
+  const [loadScreen, setLoadScreen] = useState(false);
+  const navigate = useNavigate();
+  useEffect(() => {
+    console.log("hree");
+  }, []);
   const {
     setIsLogin,
     setUserData,
@@ -18,17 +21,16 @@ const Form = () => {
     setStarList,
     setEvent,
   } = useGlobalContext();
-  const [notFound, setNotFound] = useState(true);
+  const [notFound, setNotFound] = useState(false);
   const [networkError, setNetworkError] = useState(false);
   const [formData, setFormData] = useState({ name: "", githubId: "" });
   const cookieRef = useRef(null);
-  const navigate = useNavigate();
   const formChange = (event) => {
     setFormData({ ...formData, [event.target.name]: event.target.value });
   };
   const formSubmit = (event) => {
     event.preventDefault();
-    setLoading(true);
+    setLoadScreen(true);
     axios(`https://api.github.com/users/${formData.githubId}`)
       .then((res) => {
         if (res.status == 200) {
@@ -53,13 +55,9 @@ const Form = () => {
                       `https://api.github.com/users/${formData.githubId}/starred`
                     ).then((starRes) => {
                       setStarList(starRes.data);
-                      setIsLogin(true);
+                      setLoadScreen(false);
+                      localStorage.setItem("login", formData.githubId);
                       navigate("/");
-                      if (err.response.status == 404) {
-                        setFormData({ ...formData, githubId: "" });
-                        setNotFound(true);
-                        setLoading(false);
-                      }
                     });
                   });
                 });
@@ -91,7 +89,7 @@ const Form = () => {
   }, [notFound, networkError]);
   return (
     <div className="form-page">
-      <Loading condition={loading} />
+      {loadScreen && <div className="loading"></div>}
       <figure className="form-figure">
         <img src={formPic} alt="" className="form-image" />
       </figure>

@@ -2,14 +2,15 @@ import React, { useEffect, useState } from "react";
 import moment from "moment/moment";
 import { Bar, Line } from "react-chartjs-2";
 import Chart, { plugins } from "chart.js/auto";
-import { mockEvents } from "../database/mockData";
+import { useGlobalContext } from "../contexts/Contexts";
 
 const ActivityTable = ({ color }) => {
   const [chartData, setChartData] = useState({ data: [], labels: [] });
+  const { event } = useGlobalContext();
 
   useEffect(() => {
     const eventsHistory = {};
-    mockEvents.forEach((element) => {
+    event.forEach((element) => {
       if (Object.entries(eventsHistory).length < 8) {
         if (eventsHistory.hasOwnProperty(element.created_at.slice(0, 10))) {
           eventsHistory[element.created_at.slice(0, 10)] += 1;

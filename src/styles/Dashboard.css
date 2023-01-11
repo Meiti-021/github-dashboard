@@ -219,7 +219,7 @@
 .user__main {
   display: grid;
   grid-template-columns: 49.5% 49.5%;
-  grid-template-rows: auto;
+  grid-template-rows: 450px;
   gap: 20px;
   place-items: center;
   margin-bottom: 20px;

@@ -5,7 +5,9 @@ import { GoMarkGithub } from "react-icons/go";
 import axios from "axios";
 import { useGlobalContext } from "../contexts/Contexts";
 import { useNavigate } from "react-router-dom";
+import Loading from "./Loading";
 const Form = () => {
+  const [loading, setLoading] = useState(false);
   const {
     setIsLogin,
     setUserData,
@@ -16,7 +18,8 @@ const Form = () => {
     setStarList,
     setEvent,
   } = useGlobalContext();
-  const [notFound, setNotFound] = useState(false);
+  const [notFound, setNotFound] = useState(true);
+  const [networkError, setNetworkError] = useState(false);
   const [formData, setFormData] = useState({ name: "", githubId: "" });
   const cookieRef = useRef(null);
   const navigate = useNavigate();
@@ -25,7 +28,7 @@ const Form = () => {
   };
   const formSubmit = (event) => {
     event.preventDefault();
-
+    setLoading(true);
     axios(`https://api.github.com/users/${formData.githubId}`)
       .then((res) => {
         if (res.status == 200) {
@@ -52,6 +55,11 @@ const Form = () => {
                       setStarList(starRes.data);
                       setIsLogin(true);
                       navigate("/");
+                      if (err.response.status == 404) {
+                        setFormData({ ...formData, githubId: "" });
+                        setNotFound(true);
+                        setLoading(false);
+                      }
                     });
                   });
                 });
@@ -61,11 +69,13 @@ const Form = () => {
         }
       })
       .catch((err) => {
-        // if (err.response.status == 404) {
-        //   setFormData({ ...formData, githubId: "" });
-        //   setNotFound(true);
-        // }
-      });
+        if (err.code === "ERR_NETWORK") {
+          setNetworkError(true);
+        } else if (err.code === "NOT_FOUND") {
+          setNotFound(true);
+        }
+      })
+      .finally(setLoading(false));
   };
   useEffect(() => {
     if (notFound) {
@@ -73,9 +83,15 @@ const Form = () => {
         setNotFound(false);
       }, 4000);
     }
-  }, [notFound]);
+    if (networkError) {
+      setTimeout(() => {
+        setNetworkError(false);
+      }, 4000);
+    }
+  }, [notFound, networkError]);
   return (
     <div className="form-page">
+      <Loading condition={loading} />
       <figure className="form-figure">
         <img src={formPic} alt="" className="form-image" />
       </figure>
@@ -107,6 +123,9 @@ const Form = () => {
             <p className="error-text">
               آیدی وارد شده با هیچ حسابی مطابقت ندارد!
             </p>
+          )}
+          {networkError && (
+            <p className="error-text">اتصال اینترنت را بررسی کنید!</p>
           )}
           <div className="input-group">
             <label htmlFor="agreement">

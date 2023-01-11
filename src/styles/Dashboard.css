@@ -219,7 +219,7 @@
 .user__main {
   display: grid;
   grid-template-columns: 49.5% 49.5%;
-  grid-template-rows: 400px;
+  grid-template-rows: auto;
   gap: 20px;
   place-items: center;
   margin-bottom: 20px;
@@ -236,7 +236,8 @@
 
 .profile__additional-info {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  gap: 45px;
 }
 
 .info {
@@ -246,6 +247,7 @@
   justify-content: center;
   align-items: center;
   gap: 5px;
+  border: 1px solid transparent;
 }
 
 .info__icon {

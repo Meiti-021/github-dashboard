@@ -12,7 +12,7 @@ import {
 const AppContext = React.createContext();
 
 const AppProvider = ({ children }) => {
-  const [isLogin, setIsLogin] = useState(true);
+  const [isLogin, setIsLogin] = useState(false);
   const [userData, setUserData] = useState(mockdata);
   const [followersData, setFollowersData] = useState(followersMock);
   const [followingsData, setFollowingsData] = useState(followingMock);

@@ -6,7 +6,16 @@ import axios from "axios";
 import { useGlobalContext } from "../contexts/Contexts";
 import { useNavigate } from "react-router-dom";
 const Form = () => {
-  const { setUserData, setIsLogin, setName } = useGlobalContext();
+  const {
+    setIsLogin,
+    setUserData,
+    setName,
+    setFollowersData,
+    setFollowingsData,
+    setRepos,
+    setStarList,
+    setEvent,
+  } = useGlobalContext();
   const [notFound, setNotFound] = useState(false);
   const [formData, setFormData] = useState({ name: "", githubId: "" });
   const cookieRef = useRef(null);
@@ -16,17 +25,39 @@ const Form = () => {
   };
   const formSubmit = (event) => {
     event.preventDefault();
+
     axios(`https://api.github.com/users/${formData.githubId}`)
       .then((res) => {
         if (res.status == 200) {
           setUserData(res.data);
-          setIsLogin(true);
           setName(formData.name);
-          if (cookieRef.current.checked) {
-            localStorage.setItem("login", `${formData.githubId}`);
-            localStorage.setItem("name", `${formData.name}`);
-          }
-          navigate("/");
+          axios(`https://api.github.com/users/${formData.githubId}/repos`).then(
+            (response) => {
+              setRepos(response.data);
+              axios(
+                `https://api.github.com/users/${formData.githubId}/followers`
+              ).then((result) => {
+                setFollowersData(result.data);
+                axios(
+                  `https://api.github.com/users/${formData.githubId}/following`
+                ).then((followRes) => {
+                  setFollowingsData(followRes.data);
+                  axios(
+                    ` https://api.github.com/users/${formData.githubId}/events/public`
+                  ).then((eventRes) => {
+                    setEvent(eventRes.data);
+                    axios(
+                      `https://api.github.com/users/${formData.githubId}/starred`
+                    ).then((starRes) => {
+                      setStarList(starRes.data);
+                      setIsLogin(true);
+                      navigate("/");
+                    });
+                  });
+                });
+              });
+            }
+          );
         }
       })
       .catch((err) => {

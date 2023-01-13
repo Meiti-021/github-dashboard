@@ -9,7 +9,7 @@ const About = () => {
     <div className="about">
       <main>
         <section>
-          <h1>گیتهاب چیه و به چه دردی میخوره؟ معرفی گیتهاب برای تازه کارها!</h1>
+          <h1>گیتهاب چیه و به چه دردی میخوره؟ معرفی گیتهاب برای تازه کارها</h1>
           <p className="subtext">ایجاد شده در تاریخ: 20 دی 1401</p>
           <img src={gitBan} alt="" className="blog-image" />
           <p className="content">

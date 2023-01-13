@@ -125,6 +125,12 @@
   direction: ltr;
 }
 
+.event-group__content a {
+  text-decoration: none;
+  display: block;
+  color: goldenrod;
+}
+
 .comming-soon {
   display: flex;
   justify-content: center;

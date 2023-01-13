@@ -59,7 +59,7 @@ const Form = () => {
 
                       axios("https://api.github.com/rate_limit").then(
                         (rateRes) => {
-                          setRateLimit(rateRes.data.resources.core.limit);
+                          setRateLimit(rateRes.data.resources.core.remaining);
                           setLoadScreen(false);
                           if (cookieRef.current.checked === true) {
                             localStorage.setItem("login", formData.githubId);

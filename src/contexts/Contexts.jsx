@@ -14,6 +14,7 @@ const AppProvider = ({ children }) => {
   const [event, setEvent] = useState(null);
   const [loading, setLoading] = useState(false);
   const [rateLimit, setRateLimit] = useState(false);
+  const [eventIndex, setEventIndex] = useState(0);
   return (
     <AppContext.Provider
       value={{
@@ -39,6 +40,8 @@ const AppProvider = ({ children }) => {
         setLoading,
         rateLimit,
         setRateLimit,
+        eventIndex,
+        setEventIndex,
       }}
     >
       {children}

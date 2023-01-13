@@ -56,7 +56,9 @@ const Form = () => {
                     ).then((starRes) => {
                       setStarList(starRes.data);
                       setLoadScreen(false);
-                      localStorage.setItem("login", formData.githubId);
+                      if (cookieRef.current.checked === true) {
+                        localStorage.setItem("login", formData.githubId);
+                      }
                       navigate("/");
                     });
                   });
@@ -73,7 +75,7 @@ const Form = () => {
           setNotFound(true);
         }
       })
-      .finally(setLoading(false));
+      .finally(setLoadScreen(false));
   };
   useEffect(() => {
     if (notFound) {

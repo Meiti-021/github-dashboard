@@ -16,8 +16,9 @@ function App() {
       <Router>
         <Routes>
           <Route
-            path="*"
+            path="/"
             element={isLogin ? <MainPage /> : <Navigate to="/loading" />}
+            end
           />
           <Route path="/home" element={<Home />} />
           <Route path="/form" element={<Form />} />

@@ -12,7 +12,10 @@ const EventInfo = ({ color }) => {
     console.log(userData);
   }, []);
   return (
-    <div className="event-info" style={{ border: `1px solid ${color}` }}>
+    <div
+      className="event-info"
+      style={{ border: `1px solid ${color}`, color: color }}
+    >
       <div className="event-rest-info">
         <div className="event-group">
           <p className="event-group__icon">

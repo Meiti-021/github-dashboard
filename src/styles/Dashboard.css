@@ -261,7 +261,7 @@
 }
 
 .info__icon {
-  color: #2a6fff;
+  color: #6957da;
   font-size: larger;
 }
 
@@ -290,13 +290,12 @@
   width: 70px;
   height: 400px;
   position: absolute;
-  background-color: #2a6fff;
+  background-color: #6957da;
   z-index: -1;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
-  background-color: #0000ff;
   margin: auto auto;
   animation: 2s ease-in-out move-border forwards infinite;
 }

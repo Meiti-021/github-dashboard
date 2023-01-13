@@ -60,6 +60,11 @@ const Loading = () => {
       navigate("/home");
     }
   }, []);
+  useEffect(() => {
+    if (window.navigator.onLine === false) {
+      alert("لطفا اتصال اینترنت خود را بررسی کنید.سپس مجددا صفحه را لود کنید!");
+    }
+  }, []);
   return (
     <div className="loading">
       <img src={load} alt="" className="loading__image" />

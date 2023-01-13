@@ -12,9 +12,9 @@ const MainPage = () => {
       <Navbar />
       <Routes>
         <Route path="/" element={<Dashboard />} end />
-        <Route path="activity" element={<Activity />} />
-        <Route path="about" element={<About />} />
-        <Route path="contact" element={<Contact />} />
+        <Route path="/activity" element={<Activity />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<Contact />} />
       </Routes>
     </div>
   );

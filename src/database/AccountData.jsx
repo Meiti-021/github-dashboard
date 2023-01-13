@@ -1,22 +1,26 @@
+import { HiCode } from "react-icons/hi";
+import { GoRepo } from "react-icons/go";
+import { SlUserFollow, SlUserFollowing } from "react-icons/sl";
+
 const AccountData = [
   {
     title: "پروژه ها",
-    icon: "./icons/repos.png",
+    icon: <GoRepo />,
     content: "public_repos",
   },
   {
     title: "دنبال کننده ها",
-    icon: "./icons/followers.png",
+    icon: <SlUserFollow />,
     content: "followers",
   },
   {
     title: "دنبال شونده ها",
-    icon: "./icons/followings.png",
+    icon: <SlUserFollowing />,
     content: "following",
   },
   {
     title: "چکیده ها",
-    icon: "./icons/gists.png",
+    icon: <HiCode />,
     content: "public_gists",
   },
 ];

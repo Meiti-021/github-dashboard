@@ -53,7 +53,7 @@ const Favorites = () => {
               maxBarThickness: 50,
               barPercentage: 1,
               data: chartData.data,
-              backgroundColor: ["#2a6fff"],
+              backgroundColor: ["#6957da"],
               label: "محبوبترین پروژه ها برحسب تعداد ستاره",
               yAxisID: "yAxis",
             },

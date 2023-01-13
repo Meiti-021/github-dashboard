@@ -48,7 +48,7 @@ const Loading = () => {
 
                         axios("https://api.github.com/rate_limit").then(
                           (rateRes) => {
-                            setRateLimit(rateRes.data.resources.core.limit);
+                            setRateLimit(rateRes.data.resources.core.remaining);
                             navigate("/");
                           }
                         );

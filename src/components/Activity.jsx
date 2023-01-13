@@ -5,8 +5,8 @@ import Events from "./Event";
 import LatestEvents from "./LatestEvents";
 import CommingSoon from "./commingSoon";
 const colors = [
-  "rgb(222,214,238)",
   "rgb(80,255,254)",
+  "rgb(222,214,238)",
   "rgb(241,78,121)",
   "rgb(236,255,133)",
   "rgb(193,162,255)",
@@ -25,7 +25,7 @@ const Activity = () => {
         setNum(num + 1);
         setColorPallet(colors[num]);
       }
-    }, 3000);
+    }, 50000);
   }, [num]);
   return (
     <div className="activity">

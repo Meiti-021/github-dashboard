@@ -16,7 +16,7 @@ function App() {
       <Router>
         <Routes>
           <Route
-            path="*"
+            path="/*"
             element={isLogin ? <MainPage /> : <Navigate to="/loading" />}
             end
           />

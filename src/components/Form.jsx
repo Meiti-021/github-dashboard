@@ -20,6 +20,7 @@ const Form = () => {
     setRepos,
     setStarList,
     setEvent,
+    setRateLimit,
   } = useGlobalContext();
   const [notFound, setNotFound] = useState(false);
   const [networkError, setNetworkError] = useState(false);
@@ -55,11 +56,17 @@ const Form = () => {
                       `https://api.github.com/users/${formData.githubId}/starred`
                     ).then((starRes) => {
                       setStarList(starRes.data);
-                      setLoadScreen(false);
-                      if (cookieRef.current.checked === true) {
-                        localStorage.setItem("login", formData.githubId);
-                      }
-                      navigate("/");
+
+                      axios("https://api.github.com/rate_limit").then(
+                        (rateRes) => {
+                          setRateLimit(rateRes.data.resources.core.limit);
+                          setLoadScreen(false);
+                          if (cookieRef.current.checked === true) {
+                            localStorage.setItem("login", formData.githubId);
+                          }
+                          navigate("/");
+                        }
+                      );
                     });
                   });
                 });

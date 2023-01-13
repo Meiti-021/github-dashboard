@@ -16,6 +16,7 @@ const Loading = () => {
     setStarList,
     setEvent,
     setLoading,
+    setRateLimit,
   } = useGlobalContext();
   useEffect(() => {
     const localData = localStorage.getItem("login");
@@ -44,7 +45,13 @@ const Loading = () => {
                         `https://api.github.com/users/${localData}/starred`
                       ).then((starRes) => {
                         setStarList(starRes.data);
-                        navigate("/");
+
+                        axios("https://api.github.com/rate_limit").then(
+                          (rateRes) => {
+                            setRateLimit(rateRes.data.resources.core.limit);
+                            navigate("/");
+                          }
+                        );
                       });
                     });
                   });

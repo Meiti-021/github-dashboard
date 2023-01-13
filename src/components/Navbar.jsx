@@ -14,6 +14,7 @@ const Navbar = () => {
     setRepos,
     setStarList,
     setEvent,
+    rateLimit,
   } = useGlobalContext();
   const logOut = () => {
     setIsLogin(false);
@@ -38,7 +39,7 @@ const Navbar = () => {
           return <NavItem {...item} key={index} />;
         })}
         <p className="rate-limit">
-          محدودیت درخواست : <br /> 60 / x
+          محدودیت درخواست : <br /> 60 / {rateLimit}
         </p>
         <button className="navbar__logout-btn" onClick={logOut}>
           خروج

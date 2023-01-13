@@ -13,6 +13,7 @@ const AppProvider = ({ children }) => {
   const [starList, setStarList] = useState(null);
   const [event, setEvent] = useState(null);
   const [loading, setLoading] = useState(false);
+  const [rateLimit, setRateLimit] = useState(false);
   return (
     <AppContext.Provider
       value={{
@@ -36,6 +37,8 @@ const AppProvider = ({ children }) => {
         setEvent,
         loading,
         setLoading,
+        rateLimit,
+        setRateLimit,
       }}
     >
       {children}

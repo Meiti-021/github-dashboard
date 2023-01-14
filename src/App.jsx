@@ -8,6 +8,7 @@ import { useGlobalContext } from "./contexts/Contexts";
 import MainPage from "./components/MainPage";
 import { Navigate } from "react-router-dom";
 import Loading from "./components/Loading";
+import Error from "./components/Error";
 
 function App() {
   const { isLogin } = useGlobalContext();
@@ -16,13 +17,14 @@ function App() {
       <Router>
         <Routes>
           <Route
-            path="/*"
+            path="*"
             element={isLogin ? <MainPage /> : <Navigate to="/loading" />}
             end
           />
           <Route path="/home" element={<Home />} />
           <Route path="/form" element={<Form />} />
           <Route path="/loading" element={<Loading />} />
+          <Route path="/error" element={<Error />} />
         </Routes>
       </Router>
     </div>

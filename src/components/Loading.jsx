@@ -60,7 +60,7 @@ const Loading = () => {
             );
           }
         })
-        .catch((err) => console.log(err))
+        .catch(() => navigate("/error"))
 
         .finally(setLoading(false));
     } else {
@@ -69,7 +69,7 @@ const Loading = () => {
   }, []);
   useEffect(() => {
     if (window.navigator.onLine === false) {
-      alert("لطفا اتصال اینترنت خود را بررسی کنید.سپس مجددا صفحه را لود کنید!");
+      navigate("/error");
     }
   }, []);
   return (

@@ -1,4 +1,4 @@
-# GitHub Dashboard
+# Persian GitHub Dashboard
 
 ![version](https://img.shields.io/badge/version-1.10.0-blue.svg) [![GitHub issues open](https://img.shields.io/github/issues/Meiti-021/github-dashboard.svg)](https://github.com/Meiti-021/github-dashboard/issues?q=is%3Aopen+is%3Aissue) [![GitHub issues closed](https://img.shields.io/github/issues-closed-raw/Meiti-021/github-dashboard.svg)](https://github.com/Meiti-021/github-dashboard/issues?q=is%3Aissue+is%3Aclosed)
 
@@ -12,8 +12,9 @@ displays them in an orderly and visual manner in charts and graphs so that
 we can have a deeper understanding of our activities in GitHub
 
 
+### language 
 
-
+- persian
 
 
 #### Special thanks

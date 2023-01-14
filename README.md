@@ -2,6 +2,9 @@
 
 ![version](https://img.shields.io/badge/version-1.10.0-blue.svg) [![GitHub issues open](https://img.shields.io/github/issues/Meiti-021/github-dashboard.svg)](https://github.com/Meiti-021/github-dashboard/issues?q=is%3Aopen+is%3Aissue) [![GitHub issues closed](https://img.shields.io/github/issues-closed-raw/Meiti-021/github-dashboard.svg)](https://github.com/Meiti-021/github-dashboard/issues?q=is%3Aissue+is%3Aclosed)
 
+## Preview
+
+[<img src="https://lh3.googleusercontent.com/MHM0XpybMKKq_lyA_JtP2r3hH48AvkCOflx9Pvx7ZKgDCWUWtlzXAkEGQrgJk37Mn8pJQ30BRq_OmvY-fKjGtUI7awEnjXcP3D4S57rtb_JCfugtkMArO_Qb1G1806dfB2LxsBJCAhtYraiD5PDsnVEDYE8M_8NSbEjurcAnmAoM_xNsqjIfCFk4ll1v68VHNg1IZBrcI5HSM3p9nh-YQjxsNn4qL_6WAN1nJ5xb8OBsM55OVoonweuhpOZRLeDHniFM0tw-NeqcKpehFQUFjw1R5gJSLyipTz1Hbf0iHw6fOtSrZ3eDEZJzF4WLG-wCVqocaSR4zHQ6rxzClZCalSKYn5XOxcBRi3Sel2IJzmgH35S8FoEx41XSig1o9P-jqI6OnJhHuk3Qji_6PkzYOj_lsTSOnxjoJjhoydzWbXBbX_jBGg-y8gbxXdeCwaRq7MAol68lZXcKdV3Z8gxWjjNmACrEvabs2LvxdCEHVicpCg2eKi7F0M72GKueL0g0FWiycDh2StukYSrzfnsk0h9Rc6mNnC3to-MAh-i_d5eumeIulE2X5_0qCC8Hk1U91TC8YZYaTRycU1A2_gM7IrqeiB761FBrnAnkKj6eIHR8uZXBcfWP-AtUB1g9IpnRGW2s0OI6o9Ank22MtKyXGXaidbE73SPlXUy_pf1YvGymIBYS9gNhLZe3vQkChO3gO9NRwzRK-o2VYdvxHYaonMbJm0kl9sN1FLukkL5Qa0kdHMZ1mUZN46cL2VSvwmc8QK59sqY01Lv2xMzZuij2RWlvGnmZcDJj6nHMp37pEllyPYtDD6UptLKoDToBhSqgDmOO-wX2N83cU7wAcW0buG45YATue3hYL2rCGUcsUr87E-hpDt7lU6dAixodtK9e1FQGsaHRnfw7levwKgX78KvIIxM5_XZ3hkbw05V3fwYSdzE=w690-h388-no?authuser=0" style="display: block; margin: 0 auto;" />](https://www.creative-tim.com/product/material-dashboard-react?ref=readme-mdr)
 
 
 ### Description 
@@ -10,6 +13,9 @@ This website is actually a small and compact project that I made to show my skil
 GitHub dashboard, by collecting a series of data from GitHub databases,
 displays them in an orderly and visual manner in charts and graphs so that
 we can have a deeper understanding of our activities in GitHub
+
+
+
 
 
 ### language 
@@ -27,9 +33,6 @@ During the development of this dashboard, i have used many existing resources fr
 Let us know your thoughts below. And good luck with development!
 
 
-## Preview
-
-[<img src="https://lh3.googleusercontent.com/MHM0XpybMKKq_lyA_JtP2r3hH48AvkCOflx9Pvx7ZKgDCWUWtlzXAkEGQrgJk37Mn8pJQ30BRq_OmvY-fKjGtUI7awEnjXcP3D4S57rtb_JCfugtkMArO_Qb1G1806dfB2LxsBJCAhtYraiD5PDsnVEDYE8M_8NSbEjurcAnmAoM_xNsqjIfCFk4ll1v68VHNg1IZBrcI5HSM3p9nh-YQjxsNn4qL_6WAN1nJ5xb8OBsM55OVoonweuhpOZRLeDHniFM0tw-NeqcKpehFQUFjw1R5gJSLyipTz1Hbf0iHw6fOtSrZ3eDEZJzF4WLG-wCVqocaSR4zHQ6rxzClZCalSKYn5XOxcBRi3Sel2IJzmgH35S8FoEx41XSig1o9P-jqI6OnJhHuk3Qji_6PkzYOj_lsTSOnxjoJjhoydzWbXBbX_jBGg-y8gbxXdeCwaRq7MAol68lZXcKdV3Z8gxWjjNmACrEvabs2LvxdCEHVicpCg2eKi7F0M72GKueL0g0FWiycDh2StukYSrzfnsk0h9Rc6mNnC3to-MAh-i_d5eumeIulE2X5_0qCC8Hk1U91TC8YZYaTRycU1A2_gM7IrqeiB761FBrnAnkKj6eIHR8uZXBcfWP-AtUB1g9IpnRGW2s0OI6o9Ank22MtKyXGXaidbE73SPlXUy_pf1YvGymIBYS9gNhLZe3vQkChO3gO9NRwzRK-o2VYdvxHYaonMbJm0kl9sN1FLukkL5Qa0kdHMZ1mUZN46cL2VSvwmc8QK59sqY01Lv2xMzZuij2RWlvGnmZcDJj6nHMp37pEllyPYtDD6UptLKoDToBhSqgDmOO-wX2N83cU7wAcW0buG45YATue3hYL2rCGUcsUr87E-hpDt7lU6dAixodtK9e1FQGsaHRnfw7levwKgX78KvIIxM5_XZ3hkbw05V3fwYSdzE=w690-h388-no?authuser=0" style="display: block; margin: 0 auto;" />](https://www.creative-tim.com/product/material-dashboard-react?ref=readme-mdr)
 
 
 ### Prerequisites

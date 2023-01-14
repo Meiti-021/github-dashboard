@@ -2,62 +2,33 @@
 
 ![version](https://img.shields.io/badge/version-2.1.0-blue.svg) [![GitHub issues open](https://img.shields.io/github/issues/creativetimofficial/material-dashboard-react.svg)](https://github.com/creativetimofficial/material-dashboard-react/issues?q=is%3Aopen+is%3Aissue) [![GitHub issues closed](https://img.shields.io/github/issues-closed-raw/creativetimofficial/material-dashboard-react.svg)](https://github.com/creativetimofficial/material-dashboard-react/issues?q=is%3Aissue+is%3Aclosed)
 
-![Image](https://s3.amazonaws.com/creativetim_bucket/products/71/original/material-dashboard-react.jpg?1638950990)
 
-Material Dashboard 2 React is our newest free MUI Admin Template based on React. If you’re a developer looking to create an admin dashboard that is developer-friendly, rich with features, and highly customisable, here is your match. Our innovative MUI & React dashboard comes with a beautiful design inspired by Google's Material Design and it will help you create stunning websites & web apps to delight your clients.
 
-**Fully Coded Elements**
-Material Dashboard 2 React is built with over 70 frontend individual elements, like buttons, inputs, navbars, nav tabs, cards, or alerts, giving you the freedom of choosing and combining. All components can take variations in color, which you can easily modify using MUI styled() API and sx prop. You will save a lot of time going from prototyping to full-functional code because all elements are implemented.
+### Description 
+This website is actually a small and compact project that I made to show my skill level in working with the React framework, REST APIs, as well as UI design and working with some JavaScript libraries.(no css framework used)
+<br />
+GitHub dashboard, by collecting a series of data from GitHub databases,
+displays them in an orderly and visual manner in charts and graphs so that
+we can have a deeper understanding of our activities in GitHub
 
-This free MUI & React Dashboard is coming with prebuilt design blocks, so the development process is seamless,
-switching from our pages to the real website is very easy to be done.
 
-View [all components here](https://www.creative-tim.com/learning-lab/react/alerts/material-dashboard/).
 
-**Documentation built by Developers**
 
-Each element is well presented in very complex documentation.
 
-You can read more about the [documentation here](https://www.creative-tim.com/learning-lab/react/overview/material-dashboard/).
-
-**Example Pages**
-
-If you want to get inspiration or just show something directly to your clients, you can jump-start your development with our pre-built example pages. You will be able to quickly set up the basic structure for your web project.
-
-View [example pages here](https://demos.creative-tim.com/material-dashboard-react/#/dashboard).
-
-**HELPFUL LINKS**
-
-- View [Github Repository](https://github.com/creativetimofficial/material-dashboard-react)
-- Check [FAQ Page](https://www.creative-tim.com/faq)
 
 #### Special thanks
 
-During the development of this dashboard, we have used many existing resources from awesome developers. We want to thank them for providing their tools open source:
+During the development of this dashboard, i have used many existing resources from awesome developers. i want to thank them for providing their tools open source:
 
-- [MUI](https://mui.com/) - The React UI library for faster and easier web development.
 - [React ChartJS 2](http://reactchartjs.github.io/react-chartjs-2/#/) - Simple yet flexible React charting for designers & developers.
 - [ChromaJS](https://gka.github.io/chroma.js/) - A small-ish zero-dependency JavaScript library for all kinds of color conversions and color scales.
 
 Let us know your thoughts below. And good luck with development!
 
-## Table of Contents
 
-- [Versions](#versions)
-- [Demo](#demo)
-- [Quick Start](#quick-start)
-- [Documentation](#documentation)
-- [File Structure](#file-structure)
-- [Browser Support](#browser-support)
-- [Resources](#resources)
-- [Reporting Issues](#reporting-issues)
-- [Technical Support or Questions](#technical-support-or-questions)
-- [Licensing](#licensing)
-- [Useful Links](#useful-links)
+## Preview
 
-## Versions
-
-[<img src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/logos/react-logo.png?raw=true" width="60" height="60" />](https://www.creative-tim.com/product/material-dashboard-react?ref=readme-mdr)
+[<img src="https://lh3.googleusercontent.com/MHM0XpybMKKq_lyA_JtP2r3hH48AvkCOflx9Pvx7ZKgDCWUWtlzXAkEGQrgJk37Mn8pJQ30BRq_OmvY-fKjGtUI7awEnjXcP3D4S57rtb_JCfugtkMArO_Qb1G1806dfB2LxsBJCAhtYraiD5PDsnVEDYE8M_8NSbEjurcAnmAoM_xNsqjIfCFk4ll1v68VHNg1IZBrcI5HSM3p9nh-YQjxsNn4qL_6WAN1nJ5xb8OBsM55OVoonweuhpOZRLeDHniFM0tw-NeqcKpehFQUFjw1R5gJSLyipTz1Hbf0iHw6fOtSrZ3eDEZJzF4WLG-wCVqocaSR4zHQ6rxzClZCalSKYn5XOxcBRi3Sel2IJzmgH35S8FoEx41XSig1o9P-jqI6OnJhHuk3Qji_6PkzYOj_lsTSOnxjoJjhoydzWbXBbX_jBGg-y8gbxXdeCwaRq7MAol68lZXcKdV3Z8gxWjjNmACrEvabs2LvxdCEHVicpCg2eKi7F0M72GKueL0g0FWiycDh2StukYSrzfnsk0h9Rc6mNnC3to-MAh-i_d5eumeIulE2X5_0qCC8Hk1U91TC8YZYaTRycU1A2_gM7IrqeiB761FBrnAnkKj6eIHR8uZXBcfWP-AtUB1g9IpnRGW2s0OI6o9Ank22MtKyXGXaidbE73SPlXUy_pf1YvGymIBYS9gNhLZe3vQkChO3gO9NRwzRK-o2VYdvxHYaonMbJm0kl9sN1FLukkL5Qa0kdHMZ1mUZN46cL2VSvwmc8QK59sqY01Lv2xMzZuij2RWlvGnmZcDJj6nHMp37pEllyPYtDD6UptLKoDToBhSqgDmOO-wX2N83cU7wAcW0buG45YATue3hYL2rCGUcsUr87E-hpDt7lU6dAixodtK9e1FQGsaHRnfw7levwKgX78KvIIxM5_XZ3hkbw05V3fwYSdzE=w690-h388-no?authuser=0" style="display: block; margin: 0 auto;" />](https://www.creative-tim.com/product/material-dashboard-react?ref=readme-mdr)
 
 | React |
 | ----- |

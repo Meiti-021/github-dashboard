@@ -1,6 +1,6 @@
-# [Material Dashboard 2 React](http://demos.creative-tim.com/material-dashboard-react/#/dashboard?ref=readme-mdr) [![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social&logo=twitter)](https://twitter.com/intent/tweet?url=https://www.creative-tim.com/product/material-dashboard-react&text=Check%20Material%20Dashboard%202%20react%20made%20by%20@CreativeTim%20#webdesign%20#dashboard%20#materialdesign%20#react%20https://www.creative-tim.com/product/material-dashboard-react)
+# GitHub Dashboard
 
-![version](https://img.shields.io/badge/version-2.1.0-blue.svg) [![GitHub issues open](https://img.shields.io/github/issues/creativetimofficial/material-dashboard-react.svg)](https://github.com/creativetimofficial/material-dashboard-react/issues?q=is%3Aopen+is%3Aissue) [![GitHub issues closed](https://img.shields.io/github/issues-closed-raw/creativetimofficial/material-dashboard-react.svg)](https://github.com/creativetimofficial/material-dashboard-react/issues?q=is%3Aissue+is%3Aclosed)
+![version](https://img.shields.io/badge/version-1.10.0-blue.svg) [![GitHub issues open](https://img.shields.io/github/issues/Meiti-021/github-dashboard.svg)](https://github.com/Meiti-021/github-dashboard/issues?q=is%3Aopen+is%3Aissue) [![GitHub issues closed](https://img.shields.io/github/issues-closed-raw/Meiti-021/github-dashboard.svg)](https://github.com/Meiti-021/github-dashboard/issues?q=is%3Aissue+is%3Aclosed)
 
 
 
@@ -50,8 +50,7 @@ You can also update the packages by `yarn update` and `npm update`
 
 ## Contributing
 
-- If you have problems please leave an `issue` from [here](https://github.com/Meiti-021/github-dashboard
-/issues)
+- If you have problems please leave an `issue` from [here](https://github.com/Meiti-021/github-dashboard/issues)
 - Consider forking the project and submitting new `pull requests`. I am much likely control [my github account](https://github.com/Meiti-021).
 
 ## You can reach out 😊😊

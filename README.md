@@ -30,159 +30,44 @@ Let us know your thoughts below. And good luck with development!
 
 [<img src="https://lh3.googleusercontent.com/MHM0XpybMKKq_lyA_JtP2r3hH48AvkCOflx9Pvx7ZKgDCWUWtlzXAkEGQrgJk37Mn8pJQ30BRq_OmvY-fKjGtUI7awEnjXcP3D4S57rtb_JCfugtkMArO_Qb1G1806dfB2LxsBJCAhtYraiD5PDsnVEDYE8M_8NSbEjurcAnmAoM_xNsqjIfCFk4ll1v68VHNg1IZBrcI5HSM3p9nh-YQjxsNn4qL_6WAN1nJ5xb8OBsM55OVoonweuhpOZRLeDHniFM0tw-NeqcKpehFQUFjw1R5gJSLyipTz1Hbf0iHw6fOtSrZ3eDEZJzF4WLG-wCVqocaSR4zHQ6rxzClZCalSKYn5XOxcBRi3Sel2IJzmgH35S8FoEx41XSig1o9P-jqI6OnJhHuk3Qji_6PkzYOj_lsTSOnxjoJjhoydzWbXBbX_jBGg-y8gbxXdeCwaRq7MAol68lZXcKdV3Z8gxWjjNmACrEvabs2LvxdCEHVicpCg2eKi7F0M72GKueL0g0FWiycDh2StukYSrzfnsk0h9Rc6mNnC3to-MAh-i_d5eumeIulE2X5_0qCC8Hk1U91TC8YZYaTRycU1A2_gM7IrqeiB761FBrnAnkKj6eIHR8uZXBcfWP-AtUB1g9IpnRGW2s0OI6o9Ank22MtKyXGXaidbE73SPlXUy_pf1YvGymIBYS9gNhLZe3vQkChO3gO9NRwzRK-o2VYdvxHYaonMbJm0kl9sN1FLukkL5Qa0kdHMZ1mUZN46cL2VSvwmc8QK59sqY01Lv2xMzZuij2RWlvGnmZcDJj6nHMp37pEllyPYtDD6UptLKoDToBhSqgDmOO-wX2N83cU7wAcW0buG45YATue3hYL2rCGUcsUr87E-hpDt7lU6dAixodtK9e1FQGsaHRnfw7levwKgX78KvIIxM5_XZ3hkbw05V3fwYSdzE=w690-h388-no?authuser=0" style="display: block; margin: 0 auto;" />](https://www.creative-tim.com/product/material-dashboard-react?ref=readme-mdr)
 
-| React |
-| ----- |
 
-| [![Material Dashboard React](https://s3.amazonaws.com/creativetim_bucket/products/71/thumb/material-dashboard-react.jpg?1638950990)](http://demos.creative-tim.com/material-dashboard-react/#/dashboard?ref=readme-mdr)
+### Prerequisites
 
-## Demo
+- Basic knowledge about javascript, react, redux, etc.
 
-- [Dashboard](http://demos.creative-tim.com/material-dashboard-react/#/dashboard?ref=readme-sudr)
-- [Profile](https://demos.creative-tim.com/material-dashboard-react/#/profile?ref=readme-sudr)
-- [RTL](https://demos.creative-tim.com/material-dashboard-react/#/rtl?ref=readme-sudr)
-- [Sign In](https://demos.creative-tim.com/material-dashboard-react/#/authentication/sign-in?ref=readme-sudr)
-- [Sign Up](https://demos.creative-tim.com/material-dashboard-react/#/authentication/sign-up?ref=readme-sudr)
+### Installing
 
-[View More](https://demos.creative-tim.com/material-dashboard-react/#/dashboard?ref=readme-mdr).
+Please run `yarn install` or `npm install` to get required packages
 
-## Quick start
+You can also update the packages by `yarn update` and `npm update`
 
-Quick start options:
+## Built With
 
-- Download from [Creative Tim](https://www.creative-tim.com/product/material-dashboard-react?ref=readme-mdr).
+- [React](http://reactjs.org/) - Javascript Library for creating UI
+- [React-Router](https://reacttraining.com/react-router/web)
+- [Redux](https://redux.js.org/) - A predictable state container for JavaScript apps.
+- Much More..
 
-## Terminal Commands
+## Contributing
 
-1. Download and Install NodeJs LTS version from [NodeJs Official Page](https://nodejs.org/en/download/).
-2. Navigate to the root ./ directory of the product and run `yarn install` or `npm install` to install our local dependencies.
+- If you have problems please leave an `issue` from [here](https://github.com/Meiti-021/github-dashboard
+/issues)
+- Consider forking the project and submitting new `pull requests`. I am much likely control [my github account](https://github.com/Meiti-021).
 
-## Documentation
+## You can reach out 😊😊
 
-The documentation for the Material Dashboard is hosted at our [website](https://www.creative-tim.com/learning-lab/react/overview/material-dashboard/?ref=readme-mdr).
+Feel free to contact me about the problems. I will try to help as much as I can 😉
 
-### What's included
+[![Linkedin Badge](https://img.shields.io/badge/linkedin-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white)](www.linkedin.com/in/meiti021)
+[![Mail Badge](https://img.shields.io/badge/email-c14438?style=for-the-badge&logo=Gmail&logoColor=white&link=mailto:meiti.edu@gmail.com)](mailto:meiti.edu@gmail.com)
+[![Twitter Badge](https://img.shields.io/badge/twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/meiti-021)
+[![Github Badge](https://img.shields.io/badge/github-333?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Meiti-021)
 
-Within the download you'll find the following directories and files:
+## License
 
-```
-material-dashboard-react
-    ├── public
-    │   ├── apple-icon.png
-    │   ├── favicon.png
-    │   ├── index.html
-    │   ├── manifest.json
-    │   └── robots.txt
-    ├── src
-    │   ├── assets
-    │   │   ├── images
-    │   │   └── theme
-    │   │       ├── base
-    │   │       ├── components
-    │   │       ├── functions
-    │   │       ├── index.js
-    │   │       └── theme-rtl.js
-    │   │   └── theme-dark
-    │   │       ├── base
-    │   │       ├── components
-    │   │       ├── functions
-    │   │       ├── index.js
-    │   │       └── theme-rtl.js
-    │   ├── components
-    │   │   ├── MDAlert
-    │   │   ├── MDAvatar
-    │   │   ├── MDBadge
-    │   │   ├── MDBox
-    │   │   ├── MDButton
-    │   │   ├── MDInput
-    │   │   ├── MDPagination
-    │   │   ├── MDProgress
-    │   │   ├── MDSnackbar
-    │   │   └── MDTypography
-    │   ├── context
-    │   ├── examples
-    │   │   ├── Breadcrumbs
-    │   │   ├── Cards
-    │   │   ├── Charts
-    │   │   ├── Configurator
-    │   │   ├── Footer
-    │   │   ├── Items
-    │   │   ├── LayoutContainers
-    │   │   ├── Lists
-    │   │   ├── Navbars
-    │   │   ├── Sidenav
-    │   │   ├── Tables
-    │   │   └── Timeline
-    │   ├── layouts
-    │   │   ├── authentication
-    │   │   ├── billing
-    │   │   ├── dashboard
-    │   │   ├── notifications
-    │   │   ├── profile
-    │   │   ├── rtl
-    │   │   └── tables
-    │   ├── App.js
-    │   ├── index.js
-    │   └── routes.js
-    ├── .eslintrc.json
-    ├── .prettierrc.json
-    ├── CHANGELOG.md
-    ├── ISSUE_TEMPLATE.md
-    ├── jsconfig.json
-    ├── LICENSE.md
-    ├── package.json
-    └── README.md
-```
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
 
-## Browser Support
+## Acknowledgments
 
-At present, we officially aim to support the last two versions of the following browsers:
-
-<img src="https://s3.amazonaws.com/creativetim_bucket/github/browser/chrome.png" width="64" height="64"> <img src="https://s3.amazonaws.com/creativetim_bucket/github/browser/firefox.png" width="64" height="64"> <img src="https://s3.amazonaws.com/creativetim_bucket/github/browser/edge.png" width="64" height="64"> <img src="https://s3.amazonaws.com/creativetim_bucket/github/browser/safari.png" width="64" height="64"> <img src="https://s3.amazonaws.com/creativetim_bucket/github/browser/opera.png" width="64" height="64">
-
-## Resources
-
-- [Live Preview](https://demos.creative-tim.com/material-dashboard-react/#/dashboard?ref=readme-mdr)
-- [Download Page](https://www.creative-tim.com/product/material-dashboard-react?ref=readme-mdr)
-- Documentation is [here](https://www.creative-tim.com/learning-lab/react/overview/material-dashboard/?ref=readme-mdr)
-- [License Agreement](https://www.creative-tim.com/license?ref=readme-mdr)
-- [Support](https://www.creative-tim.com/contact-us?ref=readme-mdr)
-- Issues: [Github Issues Page](https://github.com/creativetimofficial/material-dashboard-react/issues)
-
-## Reporting Issues
-
-We use GitHub Issues as the official bug tracker for the Material Dashboard React. Here are some advices for our users that want to report an issue:
-
-1. Make sure that you are using the latest version of the Material Dashboard React. Check the CHANGELOG from your dashboard on our [website](https://www.creative-tim.com/product/material-dashboard-react?ref=readme-mdr).
-2. Providing us reproducible steps for the issue will shorten the time it takes for it to be fixed.
-3. Some issues may be browser specific, so specifying in what browser you encountered the issue might help.
-
-## Technical Support or Questions
-
-If you have questions or need help integrating the product please [contact us](https://www.creative-tim.com/contact-us?ref=readme-mdr) instead of opening an issue.
-
-## Licensing
-
-- Copyright 2021 [Creative Tim](https://www.creative-tim.com?ref=readme-mdr)
-- Creative Tim [license](https://www.creative-tim.com/license?ref=readme-mdr)
-
-## Useful Links
-
-- [More products](https://www.creative-tim.com/templates?ref=readme-mdr) from Creative Tim
-
-- [Tutorials](https://www.youtube.com/channel/UCVyTG4sCw-rOvB9oHkzZD1w)
-
-- [Freebies](https://www.creative-tim.com/bootstrap-themes/free?ref=readme-mdr) from Creative Tim
-
-- [Affiliate Program](https://www.creative-tim.com/affiliates/new?ref=readme-mdr) (earn money)
-
-##### Social Media
-
-Twitter: <https://twitter.com/CreativeTim>
-
-Facebook: <https://www.facebook.com/CreativeTim>
-
-Dribbble: <https://dribbble.com/creativetim>
-
-Google+: <https://plus.google.com/+CreativetimPage>
-
-Instagram: <https://instagram.com/creativetimofficial>
+- Getting Better at React
+- Learning new stuffs

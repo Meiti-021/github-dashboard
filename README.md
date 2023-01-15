@@ -4,7 +4,7 @@
 
 ## Preview
 
-[<img src="./src/assets/preview.png"/>](https://www.creative-tim.com/product/material-dashboard-react?ref=readme-mdr)
+![preview](src/assets/preview.gif)
 
 ## Description
 

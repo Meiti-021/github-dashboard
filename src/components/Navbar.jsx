@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef, useEffect } from "react";
 import navicon from "../assets/navicon.png";
 import navData from "../database/NavData";
 import NavItem from "./NavItem";
@@ -27,8 +27,12 @@ const Navbar = () => {
     setEvent(null);
     localStorage.removeItem("login");
   };
+  const mainRef = useRef(null);
+  useEffect(() => {
+    mainRef.current.style.zoom = "90%";
+  }, []);
   return (
-    <div className="navbar">
+    <div className="navbar" ref={mainRef}>
       <div className="navbar__logo">
         <p className="navbar__logo-title">کاربر گیتهاب</p>
         <img src={navicon} alt="" className="navbar__logo-image" />

@@ -2,7 +2,7 @@ import Form from "./components/Form";
 import "./App.css";
 import "./styles/ihover.css";
 import Home from "./components/Home";
-import React from "react";
+import React, { useEffect } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { useGlobalContext } from "./contexts/Contexts";
 import MainPage from "./components/MainPage";
